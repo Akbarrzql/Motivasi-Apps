@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">MusicRelaxingApp</string>
+    <string name="memilih_item">Klik untuk memulai</string>
+
+    <string-array name="menit">
+        <item>Berhenti</item>
+        <item>Mulai</item>
+    </string-array>
+</resources>

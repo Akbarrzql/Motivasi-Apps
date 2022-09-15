@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Hirup Nafasmu"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/txtView"
+        app:layout_constraintBottom_toTopOf="@+id/imgbreathe"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtView"
+        app:layout_constraintVertical_bias="0.303" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/imgbreathe"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        app:lottie_rawRes="@raw/breath"
+        app:lottie_autoPlay="false"
+        app:lottie_loop="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtKata1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Halo, Bagaimana Kabarmu?"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgbreathe"
+        app:layout_constraintVertical_bias="0.336" />
+
+    <TextView
+        android:id="@+id/txtKata2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Apakah Kamu Baik Baik Saja?"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgbreathe"
+        app:layout_constraintVertical_bias="0.336" />
+
+    <TextView
+        android:id="@+id/txtKata3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hari ini terasa berat, ya?"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgbreathe"
+        app:layout_constraintVertical_bias="0.336" />
+
+    <TextView
+        android:id="@+id/txtKata4"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="Bagaimana kalau kamu melakukan sesuatu yang menangkan?"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgbreathe"
+        app:layout_constraintVertical_bias="0.336" />
+
+    <TextView
+        android:id="@+id/txtKata5"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="Seperti menonton film, mendengarkan lagu, atau catch-up dengan teman lama?"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgbreathe"
+        app:layout_constraintVertical_bias="0.336" />
+
+    <TextView
+        android:id="@+id/txtKata6"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="Santai sejenak, tenangkan pikiranmu, tidak perlu gelisah."
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgbreathe"
+        app:layout_constraintVertical_bias="0.336" />
+
+    <TextView
+        android:id="@+id/txtKata7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="Sudah merasa mendingan?"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgbreathe"
+        app:layout_constraintVertical_bias="0.336" />
+
+    <TextView
+        android:id="@+id/txtKata8"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="Jangan biarkan hari yang buruk membuatmu merasa memiliki kehidupan yang buruk."
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgbreathe"
+        app:layout_constraintVertical_bias="0.336" />
+
+    <TextView
+        android:id="@+id/txtKata9"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="Tidak ada orang yang tidak pernah mengalami hari buruk."
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgbreathe"
+        app:layout_constraintVertical_bias="0.336" />
+
+    <TextView
+        android:id="@+id/txtKata10"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="Jadi, don't be too hard on yourself."
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgbreathe"
+        app:layout_constraintVertical_bias="0.336" />
+
+    <TextView
+        android:id="@+id/txtKata11"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="Because eventually, everything will be okay."
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgbreathe"
+        app:layout_constraintVertical_bias="0.336" />
+
+    <TextView
+        android:id="@+id/motivasi1"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="“Tak peduli seberapa lambat kamu pergi, asal kamu tidak berhenti.”"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgbreathe"
+        app:layout_constraintVertical_bias="0.336"/>
+
+    <TextView
+        android:id="@+id/motivasi2"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="“Hidup bukan tentang menemukan dirimu sendiri. Hidup adalah tentang menciptakan diri sendiri.”"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgbreathe"
+        app:layout_constraintVertical_bias="0.336"/>
+
+    <TextView
+        android:id="@+id/motivasi3"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="“Percayalah pada mimpimu karena itulah yang membuatmu ajaib.”"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgbreathe"
+        app:layout_constraintVertical_bias="0.336"/>
+
+    <TextView
+        android:id="@+id/motivasi4"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="“Jika kamu bisa memimpikannya, kamu bisa melakukannya.”"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgbreathe"
+        app:layout_constraintVertical_bias="0.336" />
+
+    <TextView
+        android:id="@+id/motivasi5"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:text="“Don't let the noise of other's opinions drown out your own inner voice”"
+        android:textAlignment="center"
+        android:textSize="21sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgbreathe"
+        app:layout_constraintVertical_bias="0.339" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
