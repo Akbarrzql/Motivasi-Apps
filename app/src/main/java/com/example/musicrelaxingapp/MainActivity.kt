@@ -24,8 +24,6 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         mediaPlayer = MediaPlayer.create(this, R.raw.clarion)
-        mediaPlayer.start()
-        mediaPlayer.isLooping = true
 
         spinnerTime()
     }
@@ -46,22 +44,22 @@ class MainActivity : AppCompatActivity() {
                     if(position == 0){
                         mediaPlayer.pause()
                         imgbreathe.visibility = View.GONE
-                        txtKata1.visibility = View.GONE
-                        txtKata2.visibility = View.GONE
-                        txtKata3.visibility = View.GONE
-                        txtKata4.visibility = View.GONE
-                        txtKata5.visibility = View.GONE
-                        txtKata6.visibility = View.GONE
-                        txtKata7.visibility = View.GONE
-                        txtKata8.visibility = View.GONE
-                        txtKata9.visibility = View.GONE
-                        txtKata10.visibility = View.GONE
-                        txtKata11.visibility = View.GONE
-                        motivasi1.visibility = View.GONE
-                        motivasi2.visibility = View.GONE
-                        motivasi3.visibility = View.GONE
-                        motivasi4.visibility = View.GONE
-                        motivasi5.visibility = View.GONE
+                        txtKata1.visibility = View.INVISIBLE
+                        txtKata2.visibility = View.INVISIBLE
+                        txtKata3.visibility = View.INVISIBLE
+                        txtKata4.visibility = View.INVISIBLE
+                        txtKata5.visibility = View.INVISIBLE
+                        txtKata6.visibility = View.INVISIBLE
+                        txtKata7.visibility = View.INVISIBLE
+                        txtKata8.visibility = View.INVISIBLE
+                        txtKata9.visibility = View.INVISIBLE
+                        txtKata10.visibility = View.INVISIBLE
+                        txtKata11.visibility = View.INVISIBLE
+                        motivasi1.visibility = View.INVISIBLE
+                        motivasi2.visibility = View.INVISIBLE
+                        motivasi5.visibility = View.INVISIBLE
+
+
                     }else if(position == 1){
                         mediaPlayer.start()
                         imgbreathe.visibility = View.VISIBLE
@@ -279,13 +277,13 @@ class MainActivity : AppCompatActivity() {
                         animation15.addAnimation(fadeOut15)
                         motivasi5.setAnimation(animation15)
 
+
                     }
-
-
                 }
 
                 override fun onNothingSelected(parent: AdapterView<*>) {
                     // write code to perform some action
+
                 }
             }
         }
