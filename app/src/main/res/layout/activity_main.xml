@@ -12,7 +12,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="Hirup Nafasmu"
+        android:text="Hirup"
+        android:textColor="@color/white"
+        android:textStyle="bold"
         android:textSize="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.494"
@@ -27,11 +29,9 @@
         android:layout_marginStart="80dp"
         android:text="Mulai"
         app:layout_constraintBottom_toTopOf="@+id/imgbreathe"
-        app:layout_constraintEnd_toStartOf="@+id/btnStop"
-        app:layout_constraintHorizontal_bias="0.363"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtView"
-        app:layout_constraintVertical_bias="0.352" />
+        app:layout_constraintVertical_bias="0.216" />
 
     <Button
         android:id="@+id/btnStop"
@@ -41,10 +41,10 @@
         android:text="Berhenti"
         app:layout_constraintBottom_toTopOf="@+id/imgbreathe"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.656"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toEndOf="@+id/btnStart"
         app:layout_constraintTop_toBottomOf="@+id/txtView"
-        app:layout_constraintVertical_bias="0.352" />
+        app:layout_constraintVertical_bias="0.216" />
 
     <com.airbnb.lottie.LottieAnimationView
         android:id="@+id/imgbreathe"

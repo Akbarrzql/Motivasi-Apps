@@ -8,10 +8,6 @@ import android.view.animation.AccelerateInterpolator
 import android.view.animation.AlphaAnimation
 import android.view.animation.AnimationSet
 import android.view.animation.DecelerateInterpolator
-import android.widget.AdapterView
-import android.widget.ArrayAdapter
-import android.widget.Spinner
-import android.widget.Toast
 import com.airbnb.lottie.LottieDrawable
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -24,10 +20,9 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         buttonExecution()
-
+        mediaPlayer = MediaPlayer.create(this, R.raw.clarion)
+        mediaPlayer.stop()
     }
-
-
 
     private fun buttonExecution(){
         btnStart.setOnClickListener {
@@ -51,7 +46,7 @@ class MainActivity : AppCompatActivity() {
             val animation = AnimationSet(false) //change to false
             animation.addAnimation(fadeIn)
             animation.addAnimation(fadeOut)
-            txtKata1.setAnimation(animation)
+            txtKata1.animation = animation
 
             val fadeIn2 = AlphaAnimation(0f, 1f)
             fadeIn2.interpolator = DecelerateInterpolator() //add this
@@ -66,7 +61,7 @@ class MainActivity : AppCompatActivity() {
             val animation2 = AnimationSet(false) //change to false
             animation2.addAnimation(fadeIn2)
             animation2.addAnimation(fadeOut2)
-            txtKata2.setAnimation(animation2)
+            txtKata2.animation = animation2
 
             val fadeIn3 = AlphaAnimation(0f, 1f)
             fadeIn3.interpolator = DecelerateInterpolator() //add this
@@ -81,7 +76,7 @@ class MainActivity : AppCompatActivity() {
             val animation3 = AnimationSet(false) //change to false
             animation3.addAnimation(fadeIn3)
             animation3.addAnimation(fadeOut3)
-            txtKata3.setAnimation(animation3)
+            txtKata3.animation = animation3
 
             val fadeIn4 = AlphaAnimation(0f, 1f)
             fadeIn4.interpolator = DecelerateInterpolator() //add this
@@ -96,7 +91,7 @@ class MainActivity : AppCompatActivity() {
             val animation4 = AnimationSet(false) //change to false
             animation4.addAnimation(fadeIn4)
             animation4.addAnimation(fadeOut4)
-            txtKata4.setAnimation(animation4)
+            txtKata4.animation = animation4
 
             val fadeIn5 = AlphaAnimation(0f, 1f)
             fadeIn5.interpolator = DecelerateInterpolator() //add this
@@ -111,7 +106,7 @@ class MainActivity : AppCompatActivity() {
             val animation5 = AnimationSet(false) //change to false
             animation5.addAnimation(fadeIn5)
             animation5.addAnimation(fadeOut5)
-            txtKata5.setAnimation(animation5)
+            txtKata5.animation = animation5
 
             val fadeIn6 = AlphaAnimation(0f, 1f)
             fadeIn6.interpolator = DecelerateInterpolator() //add this
@@ -126,7 +121,7 @@ class MainActivity : AppCompatActivity() {
             val animation6 = AnimationSet(false) //change to false
             animation6.addAnimation(fadeIn6)
             animation6.addAnimation(fadeOut6)
-            txtKata6.setAnimation(animation6)
+            txtKata6.animation = animation6
 
             val fadeIn7 = AlphaAnimation(0f, 1f)
             fadeIn7.interpolator = DecelerateInterpolator() //add this
@@ -141,7 +136,7 @@ class MainActivity : AppCompatActivity() {
             val animation7 = AnimationSet(false) //change to false
             animation7.addAnimation(fadeIn7)
             animation7.addAnimation(fadeOut7)
-            txtKata7.setAnimation(animation7)
+            txtKata7.animation = animation7
 
             val fadeIn8 = AlphaAnimation(0f, 1f)
             fadeIn8.interpolator = DecelerateInterpolator() //add this
@@ -156,7 +151,7 @@ class MainActivity : AppCompatActivity() {
             val animation8 = AnimationSet(false) //change to false
             animation8.addAnimation(fadeIn8)
             animation8.addAnimation(fadeOut8)
-            txtKata8.setAnimation(animation8)
+            txtKata8.animation = animation8
 
             val fadeIn9 = AlphaAnimation(0f, 1f)
             fadeIn9.interpolator = DecelerateInterpolator() //add this
@@ -171,7 +166,7 @@ class MainActivity : AppCompatActivity() {
             val animation9 = AnimationSet(false) //change to false
             animation9.addAnimation(fadeIn9)
             animation9.addAnimation(fadeOut9)
-            txtKata9.setAnimation(animation9)
+            txtKata9.animation = animation9
 
             val fadeIn10 = AlphaAnimation(0f, 1f)
             fadeIn10.interpolator = DecelerateInterpolator() //add this
@@ -186,7 +181,7 @@ class MainActivity : AppCompatActivity() {
             val animation10 = AnimationSet(false) //change to false
             animation10.addAnimation(fadeIn10)
             animation10.addAnimation(fadeOut10)
-            txtKata10.setAnimation(animation10)
+            txtKata10.animation = animation10
 
             val fadeIn11 = AlphaAnimation(0f, 1f)
             fadeIn11.interpolator = DecelerateInterpolator() //add this
@@ -201,7 +196,7 @@ class MainActivity : AppCompatActivity() {
             val animation11 = AnimationSet(false) //change to false
             animation11.addAnimation(fadeIn11)
             animation11.addAnimation(fadeOut11)
-            txtKata11.setAnimation(animation11)
+            txtKata11.animation = animation11
 
             val fadeIn13 = AlphaAnimation(0f, 1f)
             fadeIn13.interpolator = DecelerateInterpolator() //add this
@@ -216,7 +211,7 @@ class MainActivity : AppCompatActivity() {
             val animation13 = AnimationSet(false) //change to false
             animation13.addAnimation(fadeIn13)
             animation13.addAnimation(fadeOut13)
-            motivasi1.setAnimation(animation13)
+            motivasi1.animation = animation13
 
             val fadeIn14 = AlphaAnimation(0f, 1f)
             fadeIn14.interpolator = DecelerateInterpolator() //add this
@@ -231,7 +226,7 @@ class MainActivity : AppCompatActivity() {
             val animation14 = AnimationSet(false) //change to false
             animation14.addAnimation(fadeIn14)
             animation14.addAnimation(fadeOut14)
-            motivasi2.setAnimation(animation14)
+            motivasi2.animation = animation14
 
             val fadeIn15 = AlphaAnimation(0f, 1f)
             fadeIn15.interpolator = DecelerateInterpolator() //add this
@@ -246,7 +241,7 @@ class MainActivity : AppCompatActivity() {
             val animation15 = AnimationSet(false) //change to false
             animation15.addAnimation(fadeIn15)
             animation15.addAnimation(fadeOut15)
-            motivasi5.setAnimation(animation15)
+            motivasi5.animation = animation15
 
         }
 
@@ -291,6 +286,14 @@ class MainActivity : AppCompatActivity() {
 
     }
 
+    override fun onResume() {
+        super.onResume()
+        mediaPlayer.start()
+    }
+    override fun onPause() {
+        super.onPause()
+        mediaPlayer.pause()
+    }
 
     override fun onDestroy() {
         super.onDestroy()
